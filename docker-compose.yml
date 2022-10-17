@@ -10,6 +10,7 @@ services:
       - "ORACLE_MEM=4000"
     volumes:
       - ./oradata:/opt/oracle/oradata # persistent oracle database data.
+      - ./db-sample-schemas-12.2.0.1.tar.gz:/opt/db-sample-schemas-12.2.0.1.tar.gz
     ports:
       - 1521:1521
       - 8080:8080

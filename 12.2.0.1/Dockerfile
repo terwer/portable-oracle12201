@@ -109,6 +109,8 @@ USER root
 RUN $ORACLE_BASE/oraInventory/orainstRoot.sh && \
     $ORACLE_HOME/root.sh
 
+RUN yum install perl -y
+
 USER oracle
 WORKDIR /home/oracle
 
